@@ -1,0 +1,25 @@
+integrator               = md
+dt                       = 0.002
+nsteps                   = 500000
+
+nstlog                   = 500
+nstenergy                = 500
+nstxout-compressed       = 500
+
+continuation             = yes
+constraints              = h-bonds
+constraint-algorithm     = lincs
+
+cutoff-scheme            = Verlet
+
+coulombtype              = PME
+rcoulomb                 = 1.0
+
+vdwtype                  = Cut-off
+rvdw                     = 1.0
+DispCorr                 = EnerPres
+
+tcoupl                   = V-rescale
+tc-grps                  = Protein  SOL
+tau-t                    = 0.1      0.1
+ref-t                    = 300      300
