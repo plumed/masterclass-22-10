@@ -23,7 +23,7 @@ flowchart TB;
   click A "ref1" "Instructions for how to install the version of PLUMED that you will need for this exercise";
   click B "ref2" "This lesson introduces shows you how to run replica exchange simulations. To get the most out of this exercise you should complete this earlier lesson first";
   click C "video1" "A lecture that was given on June 21st 2022 as part of the plumed masterclass series that introduces you to the exercises in this lesson";
-  click D "slides.pdf" "The slides for the lecture that introduces the exercises";
+  click D "masterclass-22-10.pdf" "The slides for the lecture that introduces the exercises";
   click E "INSTRUCTIONS.md" "The instructions for the exercises";
   click F "video2" "A lecture that was given on June 27th 2022 as part of the plumed masterclass series that goes through the solutions to the exercises in the lesson";
   click G "Solution.ipynb" "A python notebook that contains a full set of soluations to the exercises that are discussed in the masterclass.  This notebook is the one that was editted during the second video lecture of the masterclass";
