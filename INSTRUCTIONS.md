@@ -93,7 +93,7 @@ export OMPI_MCA_btl="self,tcp"
 
 In the root directory of this Masterclass you will find a `conf.gro` file, that can be used as a starting configuration
 for your simulations, a `topol.top` file, which contains the topology information, and a `grompp.mdp` file
-with reasonable simulation parameters. You have also a `conf.pdb` file, that is basically the `conf.gro` file
+with reasonable simulation parameters. You have also a `ala.pdb` file, that is basically the `conf.gro` file
 converted to PDB format, and can be used for the [MOLINFO](https://www.plumed.org/doc-master/user-doc/html/_m_o_l_i_n_f_o.html) action so as to facilitate atom selections in analysis.
 
 ### Exercise 1a: Test with different temperatures
@@ -125,7 +125,7 @@ plumed driver --ixtc traj_comp.xtc --plumed plumed.dat
 with the following `plumed.dat` file:
 
 ```plumed
-MOLINFO STRUCTURE=conf.pdb
+MOLINFO STRUCTURE=ala.pdb
 phi: TORSION ATOMS=@phi-2 
 PRINT ARG=phi FILE=COLVAR
 ```
