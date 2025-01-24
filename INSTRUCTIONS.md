@@ -258,8 +258,8 @@ Check the resulting acceptance. Since the Hamiltonians are identical, the accept
 Notice that whereas this is formally true there might be numerical issues that make this test fail.
 Specifically:
 
-- Dynamic load balancing (can be switched off with `-nodlb`)
-- When using GPUs or a large number of MPI processes, GROMACS might also optimize the PME calculation dynamically, altering the acceptacte in this case (can be switched off with `notunepme`).
+- Dynamic load balancing (can be switched off with `mdrun -dlb no`)
+- When using GPUs or a large number of MPI processes, GROMACS might also optimize the PME calculation dynamically, altering the acceptacte in this case (can be switched off with `mdrun -notunepme`).
 
 See also [here](https://github.com/plumed/plumed2/issues/1177) on GitHub for a discussion of this issue.
 
